@@ -1,0 +1,14 @@
+{
+  "name": "albo",
+  "owner": {
+    "name": "Albo"
+  },
+  "plugins": [
+    {
+      "name": "albo",
+      "source": "./plugins/albo",
+      "description": "Connect your Albo library — save, find, and plan with your saved places, recipes, films and books",
+      "version": "1.0.0"
+    }
+  ]
+}
