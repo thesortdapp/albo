@@ -1,0 +1,47 @@
+{
+  "name": "albo",
+  "version": "1.0.0",
+  "description": "Save, find, and plan with your personal Albo library.",
+  "author": {
+    "name": "Albo",
+    "email": "support@albo.inc",
+    "url": "https://albo.inc"
+  },
+  "homepage": "https://albo.inc",
+  "repository": "https://github.com/thesortdapp/albo",
+  "keywords": [
+    "bookmarks",
+    "personal-library",
+    "places",
+    "recipes",
+    "films",
+    "books",
+    "planning"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Albo",
+    "shortDescription": "Save, find, and plan with your Albo library",
+    "longDescription": "Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, and build plans using the things you already love.",
+    "developerName": "Albo",
+    "category": "Productivity",
+    "capabilities": [
+      "Search",
+      "Read",
+      "Write",
+      "Planning"
+    ],
+    "websiteURL": "https://albo.inc",
+    "privacyPolicyURL": "https://albo.inc/privacy-policy",
+    "termsOfServiceURL": "https://albo.inc/terms-of-service",
+    "defaultPrompt": [
+      "Find the restaurants I saved near Soho.",
+      "Save this link to my Albo library.",
+      "Plan a weekend using my saved places."
+    ],
+    "brandColor": "#1E1E1E",
+    "composerIcon": "./assets/albo-logo.svg",
+    "logo": "./assets/albo-logo.svg"
+  }
+}

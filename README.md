@@ -30,6 +30,15 @@ codex mcp add albo --url https://mcp.albo.inc/mcp
 codex mcp login albo
 ```
 
+## ChatGPT
+
+Albo is packaged as a ChatGPT and Codex plugin under `plugins/albo`. The package
+contains the remote MCP connection plus skills for saving, finding, and planning.
+
+Until the public directory listing is approved, connect it in ChatGPT developer
+mode using `https://mcp.albo.inc/mcp`. Submission copy and review cases live in
+`plugins/albo/docs/openai-submission.md`.
+
 ## Claude Desktop / claude.ai / mobile
 
 Settings → **Connectors** → **Add custom connector** → paste `https://mcp.albo.inc/mcp` → Connect and sign in. Connectors sync across web, desktop and mobile.
