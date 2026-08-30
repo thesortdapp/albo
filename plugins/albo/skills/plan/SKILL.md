@@ -15,7 +15,7 @@ Turn the user's saved places into a concrete plan or itinerary.
    - `manageExtracts` (query, `isWishlisted: true`, relevant `extractTypes`/`tagNames`) for wishlist items that fit.
    - `manageCollection` if the user names a collection (e.g. "my Tokyo list").
 3. Build the plan: group by day and neighbourhood to minimise back-and-forth travel, alternate meals/activities sensibly, and note opening-hours caveats as assumptions to verify.
-4. Offer to save the finished plan back into Albo as a markdown document via `manageImports` (create document action) so it shows up in the user's app.
+4. Offer to save the finished plan back into Albo as a markdown document via `manageImports` with `action: "createMarkdown"` so it shows up in the user's app.
 5. If a collection for the trip exists, offer to add any newly relevant items to it.
 
 ## Notes
