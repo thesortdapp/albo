@@ -1,5 +1,6 @@
 {
   "name": "albo",
+  "description": "Official Albo plugins for finding, saving, organizing, and planning with your personal library.",
   "owner": {
     "name": "Albo"
   },
@@ -7,8 +8,8 @@
     {
       "name": "albo",
       "source": "./plugins/albo",
-      "description": "Connect your Albo library — save, find, and plan with your saved places, recipes, films and books",
-      "version": "1.0.0"
+      "description": "Connect your Albo library — find, save, organize, and plan with your saved places, recipes, films and books",
+      "version": "1.1.0"
     }
   ]
 }

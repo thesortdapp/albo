@@ -15,8 +15,8 @@ Use this document to complete the Albo draft in the OpenAI plugin submission por
 
 - Name: **Albo**
 - Category: **Productivity**
-- Short description: **Save, find, and plan with your Albo library**
-- Long description: **Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, and build plans using the things you already love.**
+- Short description: **Find, save, organize, and plan with Albo**
+- Long description: **Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, organize collections, and build plans using the things you already love.**
 - Website: `https://albo.inc`
 - Support: `support@albo.inc` and `https://albo.inc`
 - Privacy policy: `https://albo.inc/privacy-policy`
@@ -32,15 +32,18 @@ Use this document to complete the Albo draft in the OpenAI plugin submission por
 
 | Tool | Read only | Destructive | Open world | Justification |
 | --- | --- | --- | --- | --- |
-| `manageCollection` | No | No | Yes | Creates and changes collections. A collection can be created with public visibility, so the conservative public-state annotation is used. Removing an item from a collection is reversible by adding it again. |
-| `manageExtracts` | Yes | No | No | Searches and retrieves the authenticated user's saved items without changing state. |
-| `manageImports` | No | Yes | No | Saves URLs, creates documents, and can overwrite an existing markdown document. Changes stay inside the authenticated user's Albo library. |
+| `findCollections` | Yes | No | No | Lists collections or reads one collection without changing data. |
+| `changeCollection` | No | No | Yes | Creates collections and changes membership. Removing an item is reversible and does not delete the saved item. Public visibility is available when explicitly requested. |
+| `findExtracts` | Yes | No | No | Searches and retrieves the authenticated user's saved items without changing state. |
+| `findImports` | Yes | No | No | Searches and retrieves saved URL imports and markdown documents without changing state. |
+| `saveImport` | No | Yes | Yes | Saves URLs, creates documents, or overwrites an existing markdown document. URL saves may retrieve content from an external website. |
 | `getAvailableFilters` | Yes | No | No | Lists valid filter values without changing state. |
-| `geocodeLocation` | Yes | No | No | Looks up coordinates for a user-supplied place name without changing external state. |
+| `geocodeLocation` | Yes | No | Yes | Looks up coordinates for a user-supplied place name using an external geocoding provider without changing data. |
 | `searchPlacesNearby` | Yes | No | No | Searches the authenticated user's saved places without changing state. |
 | `searchTags` | Yes | No | No | Searches the authenticated user's tags without changing state. |
 | `getRecommendations` | Yes | No | No | Retrieves recommendations without changing state. |
-| `manageCollectionMemory` | No | Yes | No | Saves and deletes collection memories. Deleting a memory is irreversible. |
+| `readCollectionMemory` | Yes | No | No | Reads collection memories without changing data. |
+| `changeCollectionMemory` | No | Yes | No | Saves, updates, or permanently deletes collection memories. |
 
 ## Positive review cases
 
@@ -55,28 +58,28 @@ Use this document to complete the Albo draft in the OpenAI plugin submission por
 
 - Prompt: **What's on my film wishlist?**
 - Expected behavior: Query saved film items with the wishlist filter and summarize the results without changing data.
-- Expected tool: `manageExtracts` with the `query` action, film extract type, and `isWishlisted: true`.
+- Expected tool: `findExtracts` with the `query` action, film extract type, and `isWishlisted: true`.
 - Fixture: The reviewer account contains at least three wishlisted films.
 
 ### 3. Save a URL
 
 - Prompt: **Save this recipe to Albo: <review fixture URL>.**
 - Expected behavior: Save the supplied URL, report that extraction may still be processing, and avoid claiming extracted details before processing finishes.
-- Expected tool: `manageImports` with the `uploadUrl` action.
+- Expected tool: `saveImport` with the `uploadUrl` action.
 - Fixture: Use a stable public recipe URL that has not already been saved by the reviewer account.
 
 ### 4. Build a trip plan
 
 - Prompt: **Plan a Saturday in Paris using places I've already saved.**
 - Expected behavior: Find saved Paris places, group them into a practical day plan, label opening hours as needing verification, and prefer saved items over generic suggestions.
-- Expected tools: `geocodeLocation`, `searchPlacesNearby`, and optionally `manageExtracts`.
+- Expected tools: `geocodeLocation`, `searchPlacesNearby`, and optionally `findExtracts`.
 - Fixture: The reviewer account contains saved places in at least two Paris neighborhoods.
 
 ### 5. Save a completed plan
 
 - Prompt: **Save that Paris plan back to my Albo library.**
 - Expected behavior: Create a markdown document containing the plan and confirm where it was saved.
-- Expected tool: `manageImports` with the `createMarkdown` action.
+- Expected tool: `saveImport` with the `createMarkdown` action.
 - Fixture: Run after positive case 4 in the same conversation.
 
 ## Negative review cases
@@ -109,7 +112,7 @@ The challenge endpoint is `https://mcp.albo.inc/.well-known/openai-apps-challeng
 
 ## Initial release notes
 
-Initial public release of Albo for ChatGPT and Codex. The plugin connects to a user's personal Albo library over OAuth and provides workflows for saving links and notes, finding saved places and media, and planning with saved content. This release has no custom UI.
+Initial public release of Albo for ChatGPT and Codex. The plugin connects to a user's personal Albo library over OAuth and provides workflows for finding and saving content, organizing collections, and planning with saved places and media. This release has no custom UI.
 
 ## Portal-only owner decisions
 
