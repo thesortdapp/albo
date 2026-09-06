@@ -1,7 +1,7 @@
 {
   "name": "albo",
-  "version": "1.0.0",
-  "description": "Save, find, and plan with your personal Albo library.",
+  "version": "1.1.0",
+  "description": "Find, save, organize, and plan with your personal Albo library.",
   "author": {
     "name": "Albo",
     "email": "support@albo.inc",
@@ -22,15 +22,16 @@
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Albo",
-    "shortDescription": "Save, find, and plan with your Albo library",
-    "longDescription": "Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, and build plans using the things you already love.",
+    "shortDescription": "Find, save, organize, and plan with Albo",
+    "longDescription": "Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, organize collections, and build plans using the things you already love.",
     "developerName": "Albo",
     "category": "Productivity",
     "capabilities": [
       "Search",
       "Read",
       "Write",
-      "Planning"
+      "Planning",
+      "Organization"
     ],
     "websiteURL": "https://albo.inc",
     "privacyPolicyURL": "https://albo.inc/privacy-policy",
