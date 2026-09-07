@@ -1,0 +1,14 @@
+{
+  "name": "albo",
+  "version": "1.1.0",
+  "description": "Find, save, organize, and plan with your personal Albo library.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "albo": {
+      "httpUrl": "https://mcp.albo.inc/mcp",
+      "oauth": {
+        "enabled": true
+      }
+    }
+  }
+}
