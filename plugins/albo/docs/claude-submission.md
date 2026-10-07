@@ -24,7 +24,14 @@ The reviewer account and positive/negative cases are the same as those in `opena
 - Plugin path: `plugins/albo`
 - Included connector: `https://mcp.albo.inc/mcp`
 - Included skills: `find`, `save`, `plan`, `organize`
-- Submission page: `https://claude.ai/settings/plugins/submit`
+- Submission page: `https://claude.ai/directory/manage/new/plugin`
+- Source license: MIT
+- Intended audience: users aged 13 and over, including ages 13–17
+
+Directory data-handling declarations: reads and stores personal data; the skills
+use only the declared Albo connector; saved content is retained longer than 30
+days; intended for users under 18. The publisher must complete the live
+compliance attestations before submission.
 
 Before submitting, run `claude plugin validate` from the public repository and exercise every MCP tool through MCP Inspector and a Claude custom connector.
 

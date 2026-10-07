@@ -1,12 +1,28 @@
 {
   "name": "albo",
   "description": "Connect your Albo library — find, save, organize, and plan with your saved places, recipes, films and books",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Albo",
     "email": "support@albo.inc",
     "url": "https://albo.inc"
   },
   "homepage": "https://albo.inc",
-  "repository": "https://github.com/thesortdapp/albo"
+  "repository": "https://github.com/thesortdapp/albo",
+  "displayName": "Albo",
+  "icon": "assets/icon.png",
+  "privacyPolicyUrl": "https://albo.inc/privacy-policy",
+  "termsOfServiceUrl": "https://albo.inc/terms-of-service",
+  "supportUrl": "https://albo.inc",
+  "documentationUrl": "https://mcp.albo.inc/install.md",
+  "keywords": [
+    "bookmarks",
+    "personal-library",
+    "places",
+    "recipes",
+    "films",
+    "books",
+    "planning"
+  ],
+  "license": "MIT"
 }
