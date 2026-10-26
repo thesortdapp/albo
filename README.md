@@ -21,7 +21,7 @@ Restart Gemini CLI, then authenticate the bundled MCP server:
 ```
 
 Complete the browser sign-in and run `/mcp list` to verify the connection. The
-extension also includes `find`, `save`, `organize`, and `plan` skills that Gemini
+extension also includes `find`, `save`, `organize`, `plan`, and `recommend` skills that Gemini
 activates when they match your request.
 
 ## Claude Code
@@ -87,6 +87,7 @@ Add to `~/.cursor/mcp.json`:
 | Find | `find` skill | `/albo:find` | Search your saves with smart filters |
 | Organize | `organize` skill | automatic | Add or remove items and maintain collection memories |
 | Plan | `plan` skill | `/albo:plan` | Build itineraries from your saved places and write them back to Albo |
+| Recommend | `recommend` skill | `/albo:recommend` | Suggest new films, shows, books and more from everything you've finished and how you rated it |
 
 ## Support
 

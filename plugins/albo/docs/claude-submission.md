@@ -23,7 +23,7 @@ The reviewer account and positive/negative cases are the same as those in `opena
 - Public repository: `https://github.com/thesortdapp/albo`
 - Plugin path: `plugins/albo`
 - Included connector: `https://mcp.albo.inc/mcp`
-- Included skills: `find`, `save`, `plan`, `organize`
+- Included skills: `find`, `save`, `plan`, `organize`, `recommend`
 - Submission page: `https://claude.ai/directory/manage/new/plugin`
 - Source license: MIT
 - Intended audience: users aged 13 and over, including ages 13–17
