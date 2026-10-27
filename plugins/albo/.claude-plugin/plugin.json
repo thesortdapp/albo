@@ -1,7 +1,7 @@
 {
   "name": "albo",
-  "description": "Connect your Albo library — find, save, organize, and plan with your saved places, recipes, films and books",
-  "version": "1.2.0",
+  "description": "Find films, shows and places you will love, search your Albo saves, and keep your next picks in collections.",
+  "version": "1.2.1",
   "author": {
     "name": "Albo",
     "email": "support@albo.inc",
@@ -16,13 +16,14 @@
   "supportUrl": "https://albo.inc",
   "documentationUrl": "https://mcp.albo.inc/install.md",
   "keywords": [
-    "bookmarks",
-    "personal-library",
-    "places",
-    "recipes",
+    "recommendations",
+    "taste",
+    "search",
     "films",
-    "books",
-    "planning"
+    "tv-shows",
+    "places",
+    "collections",
+    "personal-library"
   ],
   "license": "MIT"
 }
