@@ -1,8 +1,8 @@
-# Albo for Claude
+# Albo for ChatGPT, Codex and Claude
 
-Connect [Albo](https://albo.inc) to Claude to find saved places, recipes, films,
-books, links, and documents; save new content; organize collections; and build
-plans from your library.
+Get recommendations based on the films, shows and places you like, search your
+Albo saves, and keep your next picks in private collections you can browse.
+Albo also supports saving links, documents and plans.
 
 ## Install and connect
 
@@ -18,12 +18,11 @@ the [installation guide](https://mcp.albo.inc/install.md).
 
 ## Try it
 
-- Find the restaurants I saved near Soho.
-- Save this link to my Albo library.
-- Plan a weekend using my saved places.
-- Organize these saves into a private collection.
+- Based on the films I loved in Albo, what should I watch next?
+- Find the restaurants I saved for my next trip.
+- Create a private collection for these recommendations.
 
-The bundled skills are `find`, `save`, `organize`, and `plan`. They use the declared
+The bundled skills are `recommend`, `find`, `save`, `organize`, and `plan`. They use the declared
 Albo connector; the plugin includes no local executable hooks or launchers.
 It cannot make reservations or delete your entire library.
 
@@ -31,7 +30,8 @@ It cannot make reservations or delete your entire library.
 
 Tool calls send requested searches, filters, location text or coordinates,
 identifiers, URLs, and any supplied document or memory text to Albo. Requested
-saved content and collection memories return to Claude. The connector does not
+saved content, taste history and collection memories return to your connected AI app.
+Albo does not automatically sync this information into ChatGPT memory. The connector does not
 request a complete conversation transcript or read device GPS.
 
 Saving content, editing documents, and changing collections or memories persist

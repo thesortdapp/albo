@@ -1,7 +1,7 @@
 {
   "name": "albo",
-  "version": "1.2.0",
-  "description": "Find, save, organize, and plan with your personal Albo library.",
+  "version": "1.2.1",
+  "description": "Find films, shows and places you will love, search your Albo saves, and keep your next picks in collections.",
   "author": {
     "name": "Albo",
     "email": "support@albo.inc",
@@ -10,20 +10,21 @@
   "homepage": "https://albo.inc",
   "repository": "https://github.com/thesortdapp/albo",
   "keywords": [
-    "bookmarks",
-    "personal-library",
-    "places",
-    "recipes",
+    "recommendations",
+    "taste",
+    "search",
     "films",
-    "books",
-    "planning"
+    "tv-shows",
+    "places",
+    "collections",
+    "personal-library"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Albo",
-    "shortDescription": "Find, save, organize, and plan with Albo",
-    "longDescription": "Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, organize collections, and build plans using the things you already love.",
+    "shortDescription": "Recommendations for your taste",
+    "longDescription": "Use your Albo taste history, ratings and dislikes to get recommendations that feel like you. Search saved films, shows, places and more, then create private collections you can browse in Albo. Build your taste record over time by saving finds and logging what you have watched or visited in Albo.",
     "developerName": "Albo",
     "category": "Productivity",
     "capabilities": [
@@ -37,9 +38,9 @@
     "privacyPolicyURL": "https://albo.inc/privacy-policy",
     "termsOfServiceURL": "https://albo.inc/terms-of-service",
     "defaultPrompt": [
-      "Find the restaurants I saved near Soho.",
-      "Save this link to my Albo library.",
-      "Plan a weekend using my saved places."
+      "Based on the films I loved in Albo, what should I watch next?",
+      "Find the restaurants I saved for my next trip.",
+      "Create a private collection for these recommendations."
     ],
     "brandColor": "#1E1E1E",
     "composerIcon": "./assets/albo-logo.svg",

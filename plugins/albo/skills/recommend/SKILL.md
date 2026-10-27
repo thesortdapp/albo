@@ -18,10 +18,14 @@ Suggest things the user hasn't tried yet, based only on what they've finished in
 3. Work out the patterns: genres, tone, eras, creators, pacing, and the themes their reviews mention. Treat a dislike as being as informative as a like.
 4. Recommend 3–5 titles from your own knowledge that are not in `items`. If one is in `onTheirList`, say it's already on their list instead of presenting it as new.
 5. Give each pick one short reason that names the logged titles it builds on, e.g. "you gave *Arrival* 5★ and called *Interstellar* overhyped, so this is the quieter kind of sci-fi". Don't recite their history back to them.
-6. Offer to save any pick: `saveUrl` for a link, or `createDocument` for a list of the picks.
+6. Offer to save any pick: `saveUrl` for a verified link, or `createDocument` for a list of the picks. When the user asks for a browsable shortlist, resolve an existing collection with `listCollections` or create one with `createCollection` and `visibility: "private"`. Add the returned saved item IDs with `addCollectionItems`, preserving `itemType`. Return the collection link when the tool provides one; do not claim it was saved before the writes succeed.
 
 ## Notes
 
 - If `items` is empty, say they haven't finished or rated anything of that kind in Albo yet. Then ask what they've enjoyed, or use `getRecommendations` for picks based on what similar people saved.
 - To choose from things they've already saved, use the `find` skill (`searchExtracts` with `isWishlisted: true`), not this one.
 - Never invent ratings or claim they've seen something that isn't in `items`.
+
+- Treat Albo as a taste record that the user can inspect and edit. Read relevant history when asked; do not claim to have synced it into ChatGPT memory or to keep it up to date in the background.
+- Search, ratings, reviews and title matches are evidence, not certainty. Explain the connection between a pick and the user's actual history; do not infer sensitive personal traits.
+- If the history is empty, help the user start with a few films, shows or places they enjoyed. Save only what they ask to keep, and explain that watched/visited status and ratings can be edited in Albo. Do not pretend a saved URL automatically records a positive rating.
