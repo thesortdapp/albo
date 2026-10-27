@@ -9,11 +9,11 @@ Keep the user's saved items and collection context organized with the Albo MCP t
 
 ## Workflow
 
-1. Use `findCollections` before changing a named collection. Reuse an existing collection when its title matches rather than creating a duplicate.
-2. Use `changeCollection` to create a collection or add/remove extracts and imports. Preserve whether each ID is an `extract` or an `import` when known.
+1. Use `listCollections` (and `getCollection` for its items) before changing a named collection. Reuse an existing collection when its title matches rather than creating a duplicate.
+2. Use `createCollection`, `addCollectionItems` or `removeCollectionItems`. Preserve whether each ID is an `extract` or an `import` when known.
 3. Removing an item from a collection does not delete it from the user's Albo library. State that distinction when it matters to the request.
 4. Use `readCollectionMemory` to inspect durable collection context before planning or reorganizing it.
-5. Use `changeCollectionMemory` to save a stable collection-specific constraint or correct/delete an outdated one. Do not turn transient chat details into memory.
+5. Use `saveCollectionMemory` to save or correct a stable collection-specific constraint, and `deleteCollectionMemory` to remove an outdated one. Do not turn transient chat details into memory.
 6. Summarize exactly what changed, including the collection and number of affected items.
 
 ## Boundaries

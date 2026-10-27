@@ -13,5 +13,5 @@ find, save, organize, recommend, or plan with their Albo library.
 - If Albo is not authenticated, tell the user to run `/mcp auth albo` and
   complete the browser sign-in. Never ask them to paste a token into chat.
 
-Detailed workflows are available as the bundled `find`, `save`, `organize`, and
-`plan` skills.
+Detailed workflows are available as the bundled `find`, `save`, `organize`,
+`plan`, and `recommend` skills.

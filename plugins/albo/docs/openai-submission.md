@@ -42,6 +42,7 @@ Use this document to complete the Albo draft in the OpenAI plugin submission por
 | `searchPlacesNearby` | Yes | No | No | Searches the authenticated user's saved places without changing state. |
 | `searchTags` | Yes | No | No | Searches the authenticated user's tags without changing state. |
 | `getRecommendations` | Yes | No | No | Retrieves recommendations without changing state. |
+| `getTasteHistory` | Yes | No | No | Reads the authenticated user's finished and rated items, with their own ratings and review excerpts, without changing state. |
 | `readCollectionMemory` | Yes | No | No | Reads collection memories without changing data. |
 | `changeCollectionMemory` | No | Yes | No | Saves, updates, or permanently deletes collection memories. |
 
@@ -81,6 +82,13 @@ Use this document to complete the Albo draft in the OpenAI plugin submission por
 - Expected behavior: Create a markdown document containing the plan and confirm where it was saved.
 - Expected tool: `saveImport` with the `createMarkdown` action.
 - Fixture: Run after positive case 4 in the same conversation.
+
+### 6. Recommend from the user's taste
+
+- Prompt: **Based on what I've watched and how I rated it, what should I watch next?**
+- Expected behavior: Read the user's finished and rated films and shows, low ratings included, then suggest 3-5 titles they haven't logged, each with a short reason naming titles they rated. Nothing is changed.
+- Expected tool: `getTasteHistory` with `extractTypes: ["film", "tvShow"]`.
+- Fixture: The reviewer account has at least five films or shows marked done, including at least one rated 4-5 and one rated 1-2.
 
 ## Negative review cases
 
