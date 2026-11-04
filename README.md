@@ -77,6 +77,7 @@ Add to `~/.cursor/mcp.json`:
 
 - **Save** — "Save this TikTok to Albo", "Remember this restaurant for my Lisbon trip"
 - **Find** — "What sushi places have I saved near Soho?", "What's on my film wishlist?"
+- **Analyse videos** — "Watch the TikTok I saved and explain the technique" (requires an AI host with video download and analysis support)
 - **Plan** — "Plan a weekend in Copenhagen using my saved places"
 
 ## Bundled workflows
