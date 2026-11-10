@@ -2,7 +2,9 @@
 
 Connect [Albo](https://albo.inc) to Claude to find saved places, recipes, films,
 books, links, and documents; save new content; organize collections; and build
-plans from your library.
+plans from your library. Members of an Albo team also get the Albo brain, a
+second brain of Markdown pages that Claude checks before answering, remembers
+decisions into, and tidies.
 
 ## Install and connect
 
@@ -10,6 +12,10 @@ plans from your library.
 claude plugin marketplace add thesortdapp/albo
 claude plugin install albo@albo
 ```
+
+On claude.ai or the desktop app: [Customize → Plugins](https://claude.ai/customize/plugins)
+→ **Add** → **Add marketplace** → `https://github.com/thesortdapp/albo`, or
+**Upload plugin** with the release zip.
 
 The plugin includes the remote Streamable HTTP MCP server at
 `https://mcp.albo.inc/mcp`. Sign in with your Albo account through its OAuth flow.
@@ -22,8 +28,12 @@ the [installation guide](https://mcp.albo.inc/install.md).
 - Save this link to my Albo library.
 - Plan a weekend using my saved places.
 - Organize these saves into a private collection.
+- What did we decide about the Lisbon offsite?
+- Tidy my Albo brain.
 
-The bundled skills are `find`, `save`, `organize`, and `plan`. They use the declared
+The bundled library skills are `find`, `save`, `organize`, `plan`, and
+`recommend`. The brain skills are `brain`, `remember`, `team-skills`, `tidy`,
+and `think`; they run only when the connector offers brain tools. They use the declared
 Albo connector; the plugin includes no local executable hooks or launchers.
 It cannot make reservations or delete your entire library.
 
@@ -33,6 +43,11 @@ Tool calls send requested searches, filters, location text or coordinates,
 identifiers, URLs, and any supplied document or memory text to Albo. Requested
 saved content and collection memories return to Claude. The connector does not
 request a complete conversation transcript or read device GPS.
+
+The `remember` skill saves lasting decisions and facts from the conversation to
+the user's Albo brain without asking first. It never saves health, family,
+money or other private matters unless the user asks, and never to a team brain.
+Pages saved to a team (org or group) brain are visible to that team.
 
 Saving content, editing documents, and changing collections or memories persist
 in Albo. Saved records can remain for the lifetime of the account; disconnecting

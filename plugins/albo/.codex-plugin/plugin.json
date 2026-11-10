@@ -1,7 +1,7 @@
 {
   "name": "albo",
-  "version": "1.2.1",
-  "description": "Find, save, organize, and plan with your personal Albo library.",
+  "version": "1.3.0",
+  "description": "Find, save, organize and plan with your Albo library, and use your Albo brain as a second brain.",
   "author": {
     "name": "Albo",
     "email": "support@albo.inc",
@@ -16,14 +16,17 @@
     "recipes",
     "films",
     "books",
-    "planning"
+    "planning",
+    "second-brain",
+    "memory",
+    "team-knowledge"
   ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Albo",
-    "shortDescription": "Find, save, organize, and plan with Albo",
-    "longDescription": "Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, organize collections, and build plans using the things you already love.",
+    "shortDescription": "Your Albo library and second brain",
+    "longDescription": "Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, organize collections, and build plans using the things you already love. Team members also get the Albo brain: Markdown pages your AI checks before answering, remembers decisions into, tidies, and uses to follow your team's skills.",
     "developerName": "Albo",
     "category": "Productivity",
     "capabilities": [
@@ -31,7 +34,8 @@
       "Read",
       "Write",
       "Planning",
-      "Organization"
+      "Organization",
+      "Memory"
     ],
     "websiteURL": "https://albo.inc",
     "privacyPolicyURL": "https://albo.inc/privacy-policy",
@@ -39,7 +43,8 @@
     "defaultPrompt": [
       "Find the restaurants I saved near Soho.",
       "Save this link to my Albo library.",
-      "Plan a weekend using my saved places."
+      "Plan a weekend using my saved places.",
+      "What does my Albo brain say about the Lisbon offsite?"
     ],
     "brandColor": "#1E1E1E",
     "composerIcon": "./assets/albo-logo.svg",
