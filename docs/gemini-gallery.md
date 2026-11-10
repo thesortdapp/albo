@@ -10,6 +10,9 @@ form or pull request for the gallery.
 3. Add the `gemini-cli-extension` topic to `thesortdapp/albo` on GitHub.
 4. Tag the commit with the same version as `gemini-extension.json` and publish a
    non-draft, non-prerelease GitHub release marked as the latest release.
+   Attach both files from `scripts/build-plugin-zip.sh` (the plugin zip and its
+   `.sha256`), never the zip alone. Gemini CLI installs a release's only asset
+   instead of the repository, and the plugin zip has no `gemini-extension.json`.
 5. Test a clean install with
    `gemini extensions install https://github.com/thesortdapp/albo`.
 6. Restart Gemini CLI, run `/mcp auth albo`, complete Albo sign-in, and verify

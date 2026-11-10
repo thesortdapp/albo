@@ -19,4 +19,10 @@ out="$root/dist/albo-plugin-$version.zip"
 mkdir -p "$root/dist"
 rm -f "$out"
 (cd "$plugin" && zip -qrX "$out" . -x '.DS_Store' -x '*/.DS_Store')
+
+# Attach BOTH files to the GitHub release. Gemini CLI installs a release's asset
+# when it is the only one, and this zip is not a Gemini extension; with two
+# assets it installs the repository source instead, which is.
+(cd "$root/dist" && shasum -a 256 "$(basename "$out")" > "$(basename "$out").sha256")
 echo "$out"
+echo "$out.sha256"
