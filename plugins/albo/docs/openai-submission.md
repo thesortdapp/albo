@@ -15,8 +15,8 @@ Use this document to complete the Albo draft in the OpenAI plugin submission por
 
 - Name: **Albo**
 - Category: **Productivity**
-- Short description: **Find, save, organize, and plan with Albo**
-- Long description: **Connect your personal Albo library to save links and notes, search saved places, recipes, films and books, organize collections, and build plans using the things you already love.**
+- Short description: **Recommendations for your taste**
+- Long description: **Use your Albo taste history, ratings and dislikes to get recommendations that feel like you. Search saved films, shows, places and more, then create private collections you can browse in Albo. Build your taste record over time by saving finds and logging what you have watched or visited in Albo.**
 - Website: `https://albo.inc`
 - Support: `support@albo.inc` and `https://albo.inc`
 - Privacy policy: `https://albo.inc/privacy-policy`
@@ -24,9 +24,9 @@ Use this document to complete the Albo draft in the OpenAI plugin submission por
 
 ## Starter prompts
 
-1. Find the restaurants I saved near Soho.
-2. Save this link to my Albo library.
-3. Plan a weekend using my saved places.
+1. Based on the films I loved in Albo, what should I watch next?
+2. Find the restaurants I saved for my next trip.
+3. Create a private collection for these recommendations.
 
 ## Tool annotation justifications
 

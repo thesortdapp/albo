@@ -1,8 +1,8 @@
 # Albo for your AI
 
-Connect [Albo](https://albo.inc) — your personal library of saved places, recipes, films and books, and your Albo brain — to Gemini, Claude, Codex, Cursor, ChatGPT and any other MCP-compatible AI.
+Connect [Albo](https://albo.inc) to get recommendations informed by your films, shows, places, ratings and dislikes. Search your saves and keep new picks in private, browsable collections. Albo works with ChatGPT, Gemini, Claude, Codex, Cursor and other MCP-compatible AI clients.
 
-The **Albo brain** is a second brain of Markdown pages (compiled truth plus an append-only timeline, joined by `[[links]]`) shared across every AI you use, with personal and team brains. Brain tools appear on the connector for members of an Albo team.
+Members of an Albo team also get the **Albo brain**: a second brain of Markdown pages (compiled truth plus an append-only timeline, joined by `[[links]]`) shared across every AI they use, with personal and team brains.
 
 **One-prompt install:** paste this into your AI coding assistant:
 
@@ -54,7 +54,7 @@ codex mcp login albo
 ## ChatGPT
 
 Albo is packaged as a ChatGPT and Codex plugin under `plugins/albo`. The package
-contains the remote MCP connection plus skills for saving, finding, and planning.
+contains the remote MCP connection plus skills for recommendations, search, saving, collections and planning. Sign in or create an account on the Albo website when connecting; new ChatGPT users get a dedicated taste onboarding.
 
 Until the public directory listing is approved, connect it in ChatGPT developer
 mode using `https://mcp.albo.inc/mcp`. Submission copy and review cases live in

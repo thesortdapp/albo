@@ -1,10 +1,10 @@
-# Albo for Claude
+# Albo for ChatGPT, Codex and Claude
 
-Connect [Albo](https://albo.inc) to Claude to find saved places, recipes, films,
-books, links, and documents; save new content; organize collections; and build
-plans from your library. Members of an Albo team also get the Albo brain, a
-second brain of Markdown pages that Claude checks before answering, remembers
-decisions into, and tidies.
+Get recommendations based on the films, shows and places you like, search your
+Albo saves, and keep your next picks in private collections you can browse.
+Albo also supports saving links, documents and plans. Members of an Albo team also get
+the Albo brain, a second brain of Markdown pages that your AI checks before
+answering, remembers decisions into, and tidies.
 
 ## Install and connect
 
@@ -24,16 +24,15 @@ the [installation guide](https://mcp.albo.inc/install.md).
 
 ## Try it
 
-- Find the restaurants I saved near Soho.
-- Save this link to my Albo library.
-- Plan a weekend using my saved places.
-- Organize these saves into a private collection.
+- Based on the films I loved in Albo, what should I watch next?
+- Find the restaurants I saved for my next trip.
+- Create a private collection for these recommendations.
 - What did we decide about the Lisbon offsite?
 - Tidy my Albo brain.
 
-The bundled library skills are `find`, `save`, `organize`, `plan`, and
-`recommend`. The brain skills are `brain`, `remember`, `team-skills`, `tidy`,
-and `think`; they run only when the connector offers brain tools. They use the declared
+The bundled library skills are `recommend`, `find`, `save`, `organize`, and
+`plan`. The brain skills are `brain`, `remember`, `team-skills`, `tidy`, and
+`think`; they run only when the connector offers brain tools. They use the declared
 Albo connector; the plugin includes no local executable hooks or launchers.
 It cannot make reservations or delete your entire library.
 
@@ -41,7 +40,8 @@ It cannot make reservations or delete your entire library.
 
 Tool calls send requested searches, filters, location text or coordinates,
 identifiers, URLs, and any supplied document or memory text to Albo. Requested
-saved content and collection memories return to Claude. The connector does not
+saved content, taste history and collection memories return to your connected AI app.
+Albo does not automatically sync this information into ChatGPT memory. The connector does not
 request a complete conversation transcript or read device GPS.
 
 The `remember` skill saves lasting decisions and facts from the conversation to

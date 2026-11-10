@@ -1,6 +1,6 @@
 {
   "name": "albo",
-  "description": "Official Albo plugins for your personal library and second brain.",
+  "description": "Official Albo plugins for taste-based recommendations, your personal library and your second brain.",
   "owner": {
     "name": "Albo"
   },
@@ -8,8 +8,8 @@
     {
       "name": "albo",
       "source": "./plugins/albo",
-      "description": "Connect your Albo library and brain — find, save, organize and plan with your saved places, recipes, films and books, and keep a second brain your AI checks, remembers into and tidies",
-      "version": "1.3.0"
+      "description": "Get recommendations from your taste, search your Albo saves, keep picks in collections, and use your Albo brain as a second brain your AI checks, remembers into and tidies.",
+      "version": "1.3.1"
     }
   ]
 }

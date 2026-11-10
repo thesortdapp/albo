@@ -1,7 +1,7 @@
 {
   "name": "albo",
-  "version": "1.3.0",
-  "description": "Find, save, organize and plan with your Albo library, and use your Albo brain as a second brain.",
+  "version": "1.3.1",
+  "description": "Recommendations from your taste, search across your Albo saves, private collections, and your Albo brain as a second brain.",
   "contextFileName": "GEMINI.md",
   "mcpServers": {
     "albo": {
