@@ -1,6 +1,6 @@
 {
   "name": "albo",
-  "description": "Official Albo plugins for finding, saving, organizing, and planning with your personal library.",
+  "description": "Official Albo plugins for your personal library and second brain.",
   "owner": {
     "name": "Albo"
   },
@@ -8,8 +8,8 @@
     {
       "name": "albo",
       "source": "./plugins/albo",
-      "description": "Connect your Albo library — find, save, organize, and plan with your saved places, recipes, films and books",
-      "version": "1.2.1"
+      "description": "Connect your Albo library and brain — find, save, organize and plan with your saved places, recipes, films and books, and keep a second brain your AI checks, remembers into and tidies",
+      "version": "1.3.0"
     }
   ]
 }
